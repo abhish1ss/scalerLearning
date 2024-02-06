@@ -1,3 +1,9 @@
+:root{
+    --background-for-toolbox: #3d3d3d;
+    --blue: #002b5b;
+    --green:#245953;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -16,7 +22,7 @@
     /*color: wheat;*/
     height: 3.5rem;
     width: 18rem;
-    background-color: #3d3d3d;
+    background-color: var(--background-for-toolbox);
     align-items: center;
     justify-content: space-evenly;
 }
@@ -50,7 +56,7 @@
     display: flex;
     height: 3.5rem;
     width: 8rem;
-    background-color: #3d3d3d;
+    background-color: var(--background-for-toolbox);
     align-items: center;
 }
 
@@ -62,4 +68,44 @@
     align-items: center;
     justify-content: center;
     color: white;
+}
+
+.action-btn-container > *:hover {
+    background-color: green;
+}
+
+/*Ticket Creation Container*/
+.model-container{
+    display: none;
+    width: 45vh;
+    height: 50vh;
+    position: absolute;
+    top:30%;
+    left: 27%;
+    z-index: 5;
+}
+
+.textarea-cont{
+    resize: none;
+    border: none;
+    outline: none;
+    background-color: #dfe4ea;
+    height: 100%;
+    width: 75%;
+    font-size: 1.5rem;
+}
+
+.priority-colors-container{
+    height: 100%;
+    width: 25%;
+    background-color: #4b4b4b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.priority-color{
+    height: 3rem;
+    width: 5rem;
 }
